@@ -1,0 +1,3479 @@
+** Kernel   level 8 tracing enabled **
+Kernel   KernelStart: Start
+Kernel   kbrk -10 0x216000
+Kernel   pcbManagerInit called
+Kernel   kbrk -5 0x216000
+Kernel   SetKernelBrk: start
+Kernel   SetKernelBrk: end, pre vmem
+Kernel   SetKernelBrk: start
+Kernel   SetKernelBrk: end, pre vmem
+Kernel   SetKernelBrk: start
+Kernel   SetKernelBrk: end, pre vmem
+Kernel   ENABLE VMEM
+Kernel   createPcb called
+Kernel   returning half frame 2044
+Kernel   half frame pfn is 1022   and offset is 0
+Kernel   createPcb END, pid is 1
+Kernel   LoadProgram './user_prog/idle', args 0x1fffc0
+Kernel   REFERENCE PT R0 START loc 4190208
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2046
+Kernel   REFERENCE PT R0 END 
+Kernel   0x3fe000   511
+Kernel   LoadProgram: LoadInfo status 0
+Kernel   text_size 0x7000, data_size 0x130, bss_size 0x30b0
+Kernel   entry 0x10130
+Kernel   LoadProgram: size 17, argcount 1
+Kernel   LoadProgram: text_npg 7, data_bss_npg 4, stack_npg 1
+Kernel   pre post free old
+Kernel   post free old
+Kernel   pre mem invalidate pages
+Kernel   psot mem invalidate pages
+Kernel   BENCHMARK
+Kernel   POST FLUSH
+Kernel   mem invalid page is 1Kernel   pre close fd
+Kernel   pre kprot change
+Kernel   excp pc li ent
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   END LOAD PROGRAM
+Kernel   MySwitch: start
+Kernel   MySwitch: case 1
+Kernel   MySwitch: end | new pid : 0
+Kernel   !!!!!!!!!!! KernelStart: IDLE LOADED
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 4190208
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2046
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 509, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 0
+Kernel   !!!!!!!!!!! KernelStart: POST FINAL CONTEXT SWITCH
+Kernel   !!!!!!!!!!! KernelStart: End for idle
+Kernel   ADD TO READY 1
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 1
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   !!!!!!!!!!! KernelStart: POST FINAL CONTEXT SWITCH
+Kernel   LoadProgram './user_prog/init', args 0x1fffc0
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   0x3fe000   1006
+Kernel   LoadProgram: LoadInfo status 0
+Kernel   text_size 0xa000, data_size 0x230, bss_size 0x30d0
+Kernel   entry 0x10130
+Kernel   LoadProgram: size 17, argcount 1
+Kernel   LoadProgram: text_npg 10, data_bss_npg 4, stack_npg 1
+Kernel   pre post free old
+Kernel   post free old
+Kernel   pre mem invalidate pages
+Kernel   psot mem invalidate pages
+Kernel   BENCHMARK
+Kernel   POST FLUSH
+Kernel   mem invalid page is 1Kernel   pre close fd
+Kernel   pre kprot change
+Kernel   excp pc li ent
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   END LOAD PROGRAM
+Kernel   !!!!!!!!!!! KernelStart: INIT LOADED WITH COMMAND ARGS 
+Kernel   !!!!!!!!!!! KernelStart: End for init
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   Page Table at Physical Address: 0x3fe000
+Kernel   Idx	Valid	PFN
+Kernel   ---------------------
+Kernel   0	0	0
+Kernel   1	0	0
+Kernel   2	0	0
+Kernel   3	0	0
+Kernel   4	0	0
+Kernel   5	0	0
+Kernel   6	0	0
+Kernel   7	0	0
+Kernel   8	0	0
+Kernel   9	0	0
+Kernel   10	0	0
+Kernel   11	0	0
+Kernel   12	0	0
+Kernel   13	0	0
+Kernel   14	0	0
+Kernel   15	0	0
+Kernel   16	1	1005
+Kernel   17	1	1004
+Kernel   18	1	1003
+Kernel   19	1	1002
+Kernel   20	1	1001
+Kernel   21	1	1000
+Kernel   22	1	999
+Kernel   23	1	998
+Kernel   24	1	997
+Kernel   25	1	996
+Kernel   26	1	995
+Kernel   27	1	994
+Kernel   28	1	993
+Kernel   29	1	992
+Kernel   30	0	0
+Kernel   31	0	0
+Kernel   32	0	0
+Kernel   33	0	0
+Kernel   34	0	0
+Kernel   35	0	0
+Kernel   36	0	0
+Kernel   37	0	0
+Kernel   38	0	0
+Kernel   39	0	0
+Kernel   40	0	0
+Kernel   41	0	0
+Kernel   42	0	0
+Kernel   43	0	0
+Kernel   44	0	0
+Kernel   45	0	0
+Kernel   46	0	0
+Kernel   47	0	0
+Kernel   48	0	0
+Kernel   49	0	0
+Kernel   50	0	0
+Kernel   51	0	0
+Kernel   52	0	0
+Kernel   53	0	0
+Kernel   54	0	0
+Kernel   55	0	0
+Kernel   56	0	0
+Kernel   57	0	0
+Kernel   58	0	0
+Kernel   59	0	0
+Kernel   60	0	0
+Kernel   61	0	0
+Kernel   62	0	0
+Kernel   63	0	0
+Kernel   64	0	0
+Kernel   65	0	0
+Kernel   66	0	0
+Kernel   67	0	0
+Kernel   68	0	0
+Kernel   69	0	0
+Kernel   70	0	0
+Kernel   71	0	0
+Kernel   72	0	0
+Kernel   73	0	0
+Kernel   74	0	0
+Kernel   75	0	0
+Kernel   76	0	0
+Kernel   77	0	0
+Kernel   78	0	0
+Kernel   79	0	0
+Kernel   80	0	0
+Kernel   81	0	0
+Kernel   82	0	0
+Kernel   83	0	0
+Kernel   84	0	0
+Kernel   85	0	0
+Kernel   86	0	0
+Kernel   87	0	0
+Kernel   88	0	0
+Kernel   89	0	0
+Kernel   90	0	0
+Kernel   91	0	0
+Kernel   92	0	0
+Kernel   93	0	0
+Kernel   94	0	0
+Kernel   95	0	0
+Kernel   96	0	0
+Kernel   97	0	0
+Kernel   98	0	0
+Kernel   99	0	0
+Kernel   100	0	0
+Kernel   101	0	0
+Kernel   102	0	0
+Kernel   103	0	0
+Kernel   104	0	0
+Kernel   105	0	0
+Kernel   106	0	0
+Kernel   107	0	0
+Kernel   108	0	0
+Kernel   109	0	0
+Kernel   110	0	0
+Kernel   111	0	0
+Kernel   112	0	0
+Kernel   113	0	0
+Kernel   114	0	0
+Kernel   115	0	0
+Kernel   116	0	0
+Kernel   117	0	0
+Kernel   118	0	0
+Kernel   119	0	0
+Kernel   120	0	0
+Kernel   121	0	0
+Kernel   122	0	0
+Kernel   123	0	0
+Kernel   124	0	0
+Kernel   125	0	0
+Kernel   126	0	0
+Kernel   127	0	0
+Kernel   128	0	0
+Kernel   129	0	0
+Kernel   130	0	0
+Kernel   131	0	0
+Kernel   132	0	0
+Kernel   133	0	0
+Kernel   134	0	0
+Kernel   135	0	0
+Kernel   136	0	0
+Kernel   137	0	0
+Kernel   138	0	0
+Kernel   139	0	0
+Kernel   140	0	0
+Kernel   141	0	0
+Kernel   142	0	0
+Kernel   143	0	0
+Kernel   144	0	0
+Kernel   145	0	0
+Kernel   146	0	0
+Kernel   147	0	0
+Kernel   148	0	0
+Kernel   149	0	0
+Kernel   150	0	0
+Kernel   151	0	0
+Kernel   152	0	0
+Kernel   153	0	0
+Kernel   154	0	0
+Kernel   155	0	0
+Kernel   156	0	0
+Kernel   157	0	0
+Kernel   158	0	0
+Kernel   159	0	0
+Kernel   160	0	0
+Kernel   161	0	0
+Kernel   162	0	0
+Kernel   163	0	0
+Kernel   164	0	0
+Kernel   165	0	0
+Kernel   166	0	0
+Kernel   167	0	0
+Kernel   168	0	0
+Kernel   169	0	0
+Kernel   170	0	0
+Kernel   171	0	0
+Kernel   172	0	0
+Kernel   173	0	0
+Kernel   174	0	0
+Kernel   175	0	0
+Kernel   176	0	0
+Kernel   177	0	0
+Kernel   178	0	0
+Kernel   179	0	0
+Kernel   180	0	0
+Kernel   181	0	0
+Kernel   182	0	0
+Kernel   183	0	0
+Kernel   184	0	0
+Kernel   185	0	0
+Kernel   186	0	0
+Kernel   187	0	0
+Kernel   188	0	0
+Kernel   189	0	0
+Kernel   190	0	0
+Kernel   191	0	0
+Kernel   192	0	0
+Kernel   193	0	0
+Kernel   194	0	0
+Kernel   195	0	0
+Kernel   196	0	0
+Kernel   197	0	0
+Kernel   198	0	0
+Kernel   199	0	0
+Kernel   200	0	0
+Kernel   201	0	0
+Kernel   202	0	0
+Kernel   203	0	0
+Kernel   204	0	0
+Kernel   205	0	0
+Kernel   206	0	0
+Kernel   207	0	0
+Kernel   208	0	0
+Kernel   209	0	0
+Kernel   210	0	0
+Kernel   211	0	0
+Kernel   212	0	0
+Kernel   213	0	0
+Kernel   214	0	0
+Kernel   215	0	0
+Kernel   216	0	0
+Kernel   217	0	0
+Kernel   218	0	0
+Kernel   219	0	0
+Kernel   220	0	0
+Kernel   221	0	0
+Kernel   222	0	0
+Kernel   223	0	0
+Kernel   224	0	0
+Kernel   225	0	0
+Kernel   226	0	0
+Kernel   227	0	0
+Kernel   228	0	0
+Kernel   229	0	0
+Kernel   230	0	0
+Kernel   231	0	0
+Kernel   232	0	0
+Kernel   233	0	0
+Kernel   234	0	0
+Kernel   235	0	0
+Kernel   236	0	0
+Kernel   237	0	0
+Kernel   238	0	0
+Kernel   239	0	0
+Kernel   240	0	0
+Kernel   241	0	0
+Kernel   242	0	0
+Kernel   243	0	0
+Kernel   244	0	0
+Kernel   245	0	0
+Kernel   246	0	0
+Kernel   247	0	0
+Kernel   248	0	0
+Kernel   249	0	0
+Kernel   250	0	0
+Kernel   251	0	0
+Kernel   252	0	0
+Kernel   253	0	0
+Kernel   254	0	0
+Kernel   255	0	0
+Kernel   256	0	0
+Kernel   257	0	0
+Kernel   258	0	0
+Kernel   259	0	0
+Kernel   260	0	0
+Kernel   261	0	0
+Kernel   262	0	0
+Kernel   263	0	0
+Kernel   264	0	0
+Kernel   265	0	0
+Kernel   266	0	0
+Kernel   267	0	0
+Kernel   268	0	0
+Kernel   269	0	0
+Kernel   270	0	0
+Kernel   271	0	0
+Kernel   272	0	0
+Kernel   273	0	0
+Kernel   274	0	0
+Kernel   275	0	0
+Kernel   276	0	0
+Kernel   277	0	0
+Kernel   278	0	0
+Kernel   279	0	0
+Kernel   280	0	0
+Kernel   281	0	0
+Kernel   282	0	0
+Kernel   283	0	0
+Kernel   284	0	0
+Kernel   285	0	0
+Kernel   286	0	0
+Kernel   287	0	0
+Kernel   288	0	0
+Kernel   289	0	0
+Kernel   290	0	0
+Kernel   291	0	0
+Kernel   292	0	0
+Kernel   293	0	0
+Kernel   294	0	0
+Kernel   295	0	0
+Kernel   296	0	0
+Kernel   297	0	0
+Kernel   298	0	0
+Kernel   299	0	0
+Kernel   300	0	0
+Kernel   301	0	0
+Kernel   302	0	0
+Kernel   303	0	0
+Kernel   304	0	0
+Kernel   305	0	0
+Kernel   306	0	0
+Kernel   307	0	0
+Kernel   308	0	0
+Kernel   309	0	0
+Kernel   310	0	0
+Kernel   311	0	0
+Kernel   312	0	0
+Kernel   313	0	0
+Kernel   314	0	0
+Kernel   315	0	0
+Kernel   316	0	0
+Kernel   317	0	0
+Kernel   318	0	0
+Kernel   319	0	0
+Kernel   320	0	0
+Kernel   321	0	0
+Kernel   322	0	0
+Kernel   323	0	0
+Kernel   324	0	0
+Kernel   325	0	0
+Kernel   326	0	0
+Kernel   327	0	0
+Kernel   328	0	0
+Kernel   329	0	0
+Kernel   330	0	0
+Kernel   331	0	0
+Kernel   332	0	0
+Kernel   333	0	0
+Kernel   334	0	0
+Kernel   335	0	0
+Kernel   336	0	0
+Kernel   337	0	0
+Kernel   338	0	0
+Kernel   339	0	0
+Kernel   340	0	0
+Kernel   341	0	0
+Kernel   342	0	0
+Kernel   343	0	0
+Kernel   344	0	0
+Kernel   345	0	0
+Kernel   346	0	0
+Kernel   347	0	0
+Kernel   348	0	0
+Kernel   349	0	0
+Kernel   350	0	0
+Kernel   351	0	0
+Kernel   352	0	0
+Kernel   353	0	0
+Kernel   354	0	0
+Kernel   355	0	0
+Kernel   356	0	0
+Kernel   357	0	0
+Kernel   358	0	0
+Kernel   359	0	0
+Kernel   360	0	0
+Kernel   361	0	0
+Kernel   362	0	0
+Kernel   363	0	0
+Kernel   364	0	0
+Kernel   365	0	0
+Kernel   366	0	0
+Kernel   367	0	0
+Kernel   368	0	0
+Kernel   369	0	0
+Kernel   370	0	0
+Kernel   371	0	0
+Kernel   372	0	0
+Kernel   373	0	0
+Kernel   374	0	0
+Kernel   375	0	0
+Kernel   376	0	0
+Kernel   377	0	0
+Kernel   378	0	0
+Kernel   379	0	0
+Kernel   380	0	0
+Kernel   381	0	0
+Kernel   382	0	0
+Kernel   383	0	0
+Kernel   384	0	0
+Kernel   385	0	0
+Kernel   386	0	0
+Kernel   387	0	0
+Kernel   388	0	0
+Kernel   389	0	0
+Kernel   390	0	0
+Kernel   391	0	0
+Kernel   392	0	0
+Kernel   393	0	0
+Kernel   394	0	0
+Kernel   395	0	0
+Kernel   396	0	0
+Kernel   397	0	0
+Kernel   398	0	0
+Kernel   399	0	0
+Kernel   400	0	0
+Kernel   401	0	0
+Kernel   402	0	0
+Kernel   403	0	0
+Kernel   404	0	0
+Kernel   405	0	0
+Kernel   406	0	0
+Kernel   407	0	0
+Kernel   408	0	0
+Kernel   409	0	0
+Kernel   410	0	0
+Kernel   411	0	0
+Kernel   412	0	0
+Kernel   413	0	0
+Kernel   414	0	0
+Kernel   415	0	0
+Kernel   416	0	0
+Kernel   417	0	0
+Kernel   418	0	0
+Kernel   419	0	0
+Kernel   420	0	0
+Kernel   421	0	0
+Kernel   422	0	0
+Kernel   423	0	0
+Kernel   424	0	0
+Kernel   425	0	0
+Kernel   426	0	0
+Kernel   427	0	0
+Kernel   428	0	0
+Kernel   429	0	0
+Kernel   430	0	0
+Kernel   431	0	0
+Kernel   432	0	0
+Kernel   433	0	0
+Kernel   434	0	0
+Kernel   435	0	0
+Kernel   436	0	0
+Kernel   437	0	0
+Kernel   438	0	0
+Kernel   439	0	0
+Kernel   440	0	0
+Kernel   441	0	0
+Kernel   442	0	0
+Kernel   443	0	0
+Kernel   444	0	0
+Kernel   445	0	0
+Kernel   446	0	0
+Kernel   447	0	0
+Kernel   448	0	0
+Kernel   449	0	0
+Kernel   450	0	0
+Kernel   451	0	0
+Kernel   452	0	0
+Kernel   453	0	0
+Kernel   454	0	0
+Kernel   455	0	0
+Kernel   456	0	0
+Kernel   457	0	0
+Kernel   458	0	0
+Kernel   459	0	0
+Kernel   460	0	0
+Kernel   461	0	0
+Kernel   462	0	0
+Kernel   463	0	0
+Kernel   464	0	0
+Kernel   465	0	0
+Kernel   466	0	0
+Kernel   467	0	0
+Kernel   468	0	0
+Kernel   469	0	0
+Kernel   470	0	0
+Kernel   471	0	0
+Kernel   472	0	0
+Kernel   473	0	0
+Kernel   474	0	0
+Kernel   475	0	0
+Kernel   476	0	0
+Kernel   477	0	0
+Kernel   478	0	0
+Kernel   479	0	0
+Kernel   480	0	0
+Kernel   481	0	0
+Kernel   482	0	0
+Kernel   483	0	0
+Kernel   484	0	0
+Kernel   485	0	0
+Kernel   486	0	0
+Kernel   487	0	0
+Kernel   488	0	0
+Kernel   489	0	0
+Kernel   490	0	0
+Kernel   491	0	0
+Kernel   492	0	0
+Kernel   493	0	0
+Kernel   494	0	0
+Kernel   495	0	0
+Kernel   496	0	0
+Kernel   497	0	0
+Kernel   498	0	0
+Kernel   499	0	0
+Kernel   500	0	0
+Kernel   501	0	0
+Kernel   502	0	0
+Kernel   503	0	0
+Kernel   504	0	0
+Kernel   505	0	0
+Kernel   506	1	991
+Kernel   507	0	0
+Kernel   508	1	1009
+Kernel   509	1	1008
+Kernel   510	1	1007
+Kernel   511	1	1006
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   REFERENCE PT R0 START loc 4192256
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2047
+Kernel   REFERENCE PT R0 END 
+Kernel   Page Table at Physical Address: 0x3ff800
+Kernel   Idx	Valid	PFN
+Kernel   ---------------------
+Kernel   0	1	512
+Kernel   1	1	513
+Kernel   2	1	514
+Kernel   3	1	515
+Kernel   4	1	516
+Kernel   5	1	517
+Kernel   6	1	518
+Kernel   7	1	519
+Kernel   8	1	520
+Kernel   9	1	521
+Kernel   10	1	522
+Kernel   11	1	523
+Kernel   12	1	524
+Kernel   13	1	525
+Kernel   14	1	526
+Kernel   15	1	527
+Kernel   16	1	528
+Kernel   17	1	529
+Kernel   18	1	530
+Kernel   19	1	531
+Kernel   20	1	532
+Kernel   21	1	533
+Kernel   22	1	534
+Kernel   23	1	535
+Kernel   24	1	536
+Kernel   25	1	537
+Kernel   26	1	538
+Kernel   27	1	539
+Kernel   28	1	540
+Kernel   29	0	0
+Kernel   30	0	0
+Kernel   31	0	0
+Kernel   32	0	0
+Kernel   33	0	0
+Kernel   34	0	0
+Kernel   35	0	0
+Kernel   36	0	0
+Kernel   37	0	0
+Kernel   38	0	0
+Kernel   39	0	0
+Kernel   40	0	0
+Kernel   41	0	0
+Kernel   42	0	0
+Kernel   43	0	0
+Kernel   44	0	0
+Kernel   45	0	0
+Kernel   46	0	0
+Kernel   47	0	0
+Kernel   48	0	0
+Kernel   49	0	0
+Kernel   50	0	0
+Kernel   51	0	0
+Kernel   52	0	0
+Kernel   53	0	0
+Kernel   54	0	0
+Kernel   55	0	0
+Kernel   56	0	0
+Kernel   57	0	0
+Kernel   58	0	0
+Kernel   59	0	0
+Kernel   60	0	0
+Kernel   61	0	0
+Kernel   62	0	0
+Kernel   63	0	0
+Kernel   64	0	0
+Kernel   65	0	0
+Kernel   66	0	0
+Kernel   67	0	0
+Kernel   68	0	0
+Kernel   69	0	0
+Kernel   70	0	0
+Kernel   71	0	0
+Kernel   72	0	0
+Kernel   73	0	0
+Kernel   74	0	0
+Kernel   75	0	0
+Kernel   76	0	0
+Kernel   77	0	0
+Kernel   78	0	0
+Kernel   79	0	0
+Kernel   80	0	0
+Kernel   81	0	0
+Kernel   82	0	0
+Kernel   83	0	0
+Kernel   84	0	0
+Kernel   85	0	0
+Kernel   86	0	0
+Kernel   87	0	0
+Kernel   88	0	0
+Kernel   89	0	0
+Kernel   90	0	0
+Kernel   91	0	0
+Kernel   92	0	0
+Kernel   93	0	0
+Kernel   94	0	0
+Kernel   95	0	0
+Kernel   96	0	0
+Kernel   97	0	0
+Kernel   98	0	0
+Kernel   99	0	0
+Kernel   100	0	0
+Kernel   101	0	0
+Kernel   102	0	0
+Kernel   103	0	0
+Kernel   104	0	0
+Kernel   105	0	0
+Kernel   106	0	0
+Kernel   107	0	0
+Kernel   108	0	0
+Kernel   109	0	0
+Kernel   110	0	0
+Kernel   111	0	0
+Kernel   112	0	0
+Kernel   113	0	0
+Kernel   114	0	0
+Kernel   115	0	0
+Kernel   116	0	0
+Kernel   117	0	0
+Kernel   118	0	0
+Kernel   119	0	0
+Kernel   120	0	0
+Kernel   121	0	0
+Kernel   122	0	0
+Kernel   123	0	0
+Kernel   124	0	0
+Kernel   125	0	0
+Kernel   126	0	0
+Kernel   127	0	0
+Kernel   128	0	0
+Kernel   129	0	0
+Kernel   130	0	0
+Kernel   131	0	0
+Kernel   132	0	0
+Kernel   133	0	0
+Kernel   134	0	0
+Kernel   135	0	0
+Kernel   136	0	0
+Kernel   137	0	0
+Kernel   138	0	0
+Kernel   139	0	0
+Kernel   140	0	0
+Kernel   141	0	0
+Kernel   142	0	0
+Kernel   143	0	0
+Kernel   144	0	0
+Kernel   145	0	0
+Kernel   146	0	0
+Kernel   147	0	0
+Kernel   148	0	0
+Kernel   149	0	0
+Kernel   150	0	0
+Kernel   151	0	0
+Kernel   152	0	0
+Kernel   153	0	0
+Kernel   154	0	0
+Kernel   155	0	0
+Kernel   156	0	0
+Kernel   157	0	0
+Kernel   158	0	0
+Kernel   159	0	0
+Kernel   160	0	0
+Kernel   161	0	0
+Kernel   162	0	0
+Kernel   163	0	0
+Kernel   164	0	0
+Kernel   165	0	0
+Kernel   166	0	0
+Kernel   167	0	0
+Kernel   168	0	0
+Kernel   169	0	0
+Kernel   170	0	0
+Kernel   171	0	0
+Kernel   172	0	0
+Kernel   173	0	0
+Kernel   174	0	0
+Kernel   175	0	0
+Kernel   176	0	0
+Kernel   177	0	0
+Kernel   178	0	0
+Kernel   179	0	0
+Kernel   180	0	0
+Kernel   181	0	0
+Kernel   182	0	0
+Kernel   183	0	0
+Kernel   184	0	0
+Kernel   185	0	0
+Kernel   186	0	0
+Kernel   187	0	0
+Kernel   188	0	0
+Kernel   189	0	0
+Kernel   190	0	0
+Kernel   191	0	0
+Kernel   192	0	0
+Kernel   193	0	0
+Kernel   194	0	0
+Kernel   195	0	0
+Kernel   196	0	0
+Kernel   197	0	0
+Kernel   198	0	0
+Kernel   199	0	0
+Kernel   200	0	0
+Kernel   201	0	0
+Kernel   202	0	0
+Kernel   203	0	0
+Kernel   204	0	0
+Kernel   205	0	0
+Kernel   206	0	0
+Kernel   207	0	0
+Kernel   208	0	0
+Kernel   209	0	0
+Kernel   210	0	0
+Kernel   211	0	0
+Kernel   212	0	0
+Kernel   213	0	0
+Kernel   214	0	0
+Kernel   215	0	0
+Kernel   216	0	0
+Kernel   217	0	0
+Kernel   218	0	0
+Kernel   219	0	0
+Kernel   220	0	0
+Kernel   221	0	0
+Kernel   222	0	0
+Kernel   223	0	0
+Kernel   224	0	0
+Kernel   225	0	0
+Kernel   226	0	0
+Kernel   227	0	0
+Kernel   228	0	0
+Kernel   229	0	0
+Kernel   230	0	0
+Kernel   231	0	0
+Kernel   232	0	0
+Kernel   233	0	0
+Kernel   234	0	0
+Kernel   235	0	0
+Kernel   236	0	0
+Kernel   237	0	0
+Kernel   238	0	0
+Kernel   239	0	0
+Kernel   240	0	0
+Kernel   241	0	0
+Kernel   242	0	0
+Kernel   243	0	0
+Kernel   244	0	0
+Kernel   245	0	0
+Kernel   246	0	0
+Kernel   247	0	0
+Kernel   248	0	0
+Kernel   249	0	0
+Kernel   250	0	0
+Kernel   251	0	0
+Kernel   252	0	0
+Kernel   253	0	0
+Kernel   254	0	0
+Kernel   255	0	0
+Kernel   256	0	0
+Kernel   257	0	0
+Kernel   258	0	0
+Kernel   259	0	0
+Kernel   260	0	0
+Kernel   261	0	0
+Kernel   262	0	0
+Kernel   263	0	0
+Kernel   264	0	0
+Kernel   265	0	0
+Kernel   266	0	0
+Kernel   267	0	0
+Kernel   268	0	0
+Kernel   269	0	0
+Kernel   270	0	0
+Kernel   271	0	0
+Kernel   272	0	0
+Kernel   273	0	0
+Kernel   274	0	0
+Kernel   275	0	0
+Kernel   276	0	0
+Kernel   277	0	0
+Kernel   278	0	0
+Kernel   279	0	0
+Kernel   280	0	0
+Kernel   281	0	0
+Kernel   282	0	0
+Kernel   283	0	0
+Kernel   284	0	0
+Kernel   285	0	0
+Kernel   286	0	0
+Kernel   287	0	0
+Kernel   288	0	0
+Kernel   289	0	0
+Kernel   290	0	0
+Kernel   291	0	0
+Kernel   292	0	0
+Kernel   293	0	0
+Kernel   294	0	0
+Kernel   295	0	0
+Kernel   296	0	0
+Kernel   297	0	0
+Kernel   298	0	0
+Kernel   299	0	0
+Kernel   300	0	0
+Kernel   301	0	0
+Kernel   302	0	0
+Kernel   303	0	0
+Kernel   304	0	0
+Kernel   305	0	0
+Kernel   306	0	0
+Kernel   307	0	0
+Kernel   308	0	0
+Kernel   309	0	0
+Kernel   310	0	0
+Kernel   311	0	0
+Kernel   312	0	0
+Kernel   313	0	0
+Kernel   314	0	0
+Kernel   315	0	0
+Kernel   316	0	0
+Kernel   317	0	0
+Kernel   318	0	0
+Kernel   319	0	0
+Kernel   320	0	0
+Kernel   321	0	0
+Kernel   322	0	0
+Kernel   323	0	0
+Kernel   324	0	0
+Kernel   325	0	0
+Kernel   326	0	0
+Kernel   327	0	0
+Kernel   328	0	0
+Kernel   329	0	0
+Kernel   330	0	0
+Kernel   331	0	0
+Kernel   332	0	0
+Kernel   333	0	0
+Kernel   334	0	0
+Kernel   335	0	0
+Kernel   336	0	0
+Kernel   337	0	0
+Kernel   338	0	0
+Kernel   339	0	0
+Kernel   340	0	0
+Kernel   341	0	0
+Kernel   342	0	0
+Kernel   343	0	0
+Kernel   344	0	0
+Kernel   345	0	0
+Kernel   346	0	0
+Kernel   347	0	0
+Kernel   348	0	0
+Kernel   349	0	0
+Kernel   350	0	0
+Kernel   351	0	0
+Kernel   352	0	0
+Kernel   353	0	0
+Kernel   354	0	0
+Kernel   355	0	0
+Kernel   356	0	0
+Kernel   357	0	0
+Kernel   358	0	0
+Kernel   359	0	0
+Kernel   360	0	0
+Kernel   361	0	0
+Kernel   362	0	0
+Kernel   363	0	0
+Kernel   364	0	0
+Kernel   365	0	0
+Kernel   366	0	0
+Kernel   367	0	0
+Kernel   368	0	0
+Kernel   369	0	0
+Kernel   370	0	0
+Kernel   371	0	0
+Kernel   372	0	0
+Kernel   373	0	0
+Kernel   374	0	0
+Kernel   375	0	0
+Kernel   376	0	0
+Kernel   377	0	0
+Kernel   378	0	0
+Kernel   379	0	0
+Kernel   380	0	0
+Kernel   381	0	0
+Kernel   382	0	0
+Kernel   383	0	0
+Kernel   384	0	0
+Kernel   385	0	0
+Kernel   386	0	0
+Kernel   387	0	0
+Kernel   388	0	0
+Kernel   389	0	0
+Kernel   390	0	0
+Kernel   391	0	0
+Kernel   392	0	0
+Kernel   393	0	0
+Kernel   394	0	0
+Kernel   395	0	0
+Kernel   396	0	0
+Kernel   397	0	0
+Kernel   398	0	0
+Kernel   399	0	0
+Kernel   400	0	0
+Kernel   401	0	0
+Kernel   402	0	0
+Kernel   403	0	0
+Kernel   404	0	0
+Kernel   405	0	0
+Kernel   406	0	0
+Kernel   407	0	0
+Kernel   408	0	0
+Kernel   409	0	0
+Kernel   410	0	0
+Kernel   411	0	0
+Kernel   412	0	0
+Kernel   413	0	0
+Kernel   414	0	0
+Kernel   415	0	0
+Kernel   416	0	0
+Kernel   417	0	0
+Kernel   418	0	0
+Kernel   419	0	0
+Kernel   420	0	0
+Kernel   421	0	0
+Kernel   422	0	0
+Kernel   423	0	0
+Kernel   424	0	0
+Kernel   425	0	0
+Kernel   426	0	0
+Kernel   427	0	0
+Kernel   428	0	0
+Kernel   429	0	0
+Kernel   430	0	0
+Kernel   431	0	0
+Kernel   432	0	0
+Kernel   433	0	0
+Kernel   434	0	0
+Kernel   435	0	0
+Kernel   436	0	0
+Kernel   437	0	0
+Kernel   438	0	0
+Kernel   439	0	0
+Kernel   440	0	0
+Kernel   441	0	0
+Kernel   442	0	0
+Kernel   443	0	0
+Kernel   444	0	0
+Kernel   445	0	0
+Kernel   446	0	0
+Kernel   447	0	0
+Kernel   448	0	0
+Kernel   449	0	0
+Kernel   450	0	0
+Kernel   451	0	0
+Kernel   452	0	0
+Kernel   453	0	0
+Kernel   454	0	0
+Kernel   455	0	0
+Kernel   456	0	0
+Kernel   457	0	0
+Kernel   458	0	0
+Kernel   459	0	0
+Kernel   460	0	0
+Kernel   461	0	0
+Kernel   462	0	0
+Kernel   463	0	0
+Kernel   464	0	0
+Kernel   465	0	0
+Kernel   466	0	0
+Kernel   467	0	0
+Kernel   468	0	0
+Kernel   469	0	0
+Kernel   470	0	0
+Kernel   471	0	0
+Kernel   472	0	0
+Kernel   473	0	0
+Kernel   474	0	0
+Kernel   475	0	0
+Kernel   476	0	0
+Kernel   477	0	0
+Kernel   478	0	0
+Kernel   479	0	0
+Kernel   480	0	0
+Kernel   481	0	0
+Kernel   482	0	0
+Kernel   483	0	0
+Kernel   484	0	0
+Kernel   485	0	0
+Kernel   486	0	0
+Kernel   487	0	0
+Kernel   488	0	0
+Kernel   489	0	0
+Kernel   490	0	0
+Kernel   491	0	0
+Kernel   492	0	0
+Kernel   493	0	0
+Kernel   494	0	0
+Kernel   495	0	0
+Kernel   496	0	0
+Kernel   497	0	0
+Kernel   498	0	0
+Kernel   499	0	0
+Kernel   500	0	0
+Kernel   501	0	0
+Kernel   502	0	0
+Kernel   503	0	0
+Kernel   504	0	0
+Kernel   505	0	0
+Kernel   506	0	0
+Kernel   507	0	0
+Kernel   508	0	1006
+Kernel   509	0	0
+Kernel   510	1	1023
+Kernel   511	1	1023
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   TRAP MEM: START addr 0x1f2dec
+Kernel   TRAP MEM: START CODE 0x1
+Kernel   FAULT PC: 0x10167, SP: 0x1f2de0, ADDR: 0x1f2dec
+Kernel   fault vpn, 498
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   TRAP MEM: Mapped VPN 505 to pfn 990
+Kernel   TRAP MEM: Mapped VPN 504 to pfn 989
+Kernel   TRAP MEM: Mapped VPN 503 to pfn 988
+Kernel   TRAP MEM: Mapped VPN 502 to pfn 987
+Kernel   TRAP MEM: Mapped VPN 501 to pfn 986
+Kernel   TRAP MEM: Mapped VPN 500 to pfn 985
+Kernel   TRAP MEM: Mapped VPN 499 to pfn 984
+Kernel   TRAP MEM: Mapped VPN 498 to pfn 983
+Kernel   TRAP MEM: SUCCESS | last want_vpn:  498
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelFork START - pid 1
+
+
+Kernel   createPcb called
+Kernel   returning half frame 2045
+Kernel   half frame pfn is 1022   and offset is 1
+Kernel   createPcb END, pid is 2
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelFork brk is 122880
+Kernel   KernelFork Copy parent pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   KernelFork end copying 
+Kernel   PRE CTX SWITCH IN FORK 
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 1
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for PARENT
+Kernel   ADD TO READY 2
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelFork START - pid 1
+
+
+Kernel   createPcb called
+Kernel   returning half frame 1910
+Kernel   half frame pfn is 955   and offset is 0
+Kernel   createPcb END, pid is 3
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 509, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelFork brk is 122880
+Kernel   KernelFork Copy parent pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   KernelFork end copying 
+Kernel   PRE CTX SWITCH IN FORK 
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 509, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 1
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for PARENT
+Kernel   ADD TO READY 3
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = a
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = g
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 2
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for CHILD
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = -
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = C
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = l
+Kernel   VerifyInputString - char = d
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = p
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 0
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = F
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = F
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 2
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 3
+Kernel   ADD TO READY 2
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 3
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for CHILD
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 3
+
+
+Kernel   ENQUE BLOCKED P: 0x219c48
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 1
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelWait START - pid 1
+
+
+Kernel   GET NEXT READY
+Kernel    - next ready is 2
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 2
+
+
+Kernel   ENQUE BLOCKED P: 0x219860
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 2 - DO NOTHING
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   ADD TO READY 2
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a030   2
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 2
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 2
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 2
+
+
+Kernel   ENQUE BLOCKED P: 0x219860
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   ADD TO READY 3
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a030   2
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 3
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 3
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 3
+
+
+Kernel   ENQUE BLOCKED P: 0x219c48
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a030   2
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 2
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   ADD TO READY 2
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a030   2
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 2
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 2
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 2
+
+
+Kernel   ENQUE BLOCKED P: 0x219860
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 2 - DO NOTHING
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   ADD TO READY 3
+Kernel   TrapClockHandler - DEQUE P: 0x219860
+Kernel   ADD TO READY 2
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a030   2
+Kernel   PID: 3
+Kernel   PID: 2
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 3
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 3
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelDelay START - pid 3
+
+
+Kernel   ENQUE BLOCKED P: 0x219c48
+Kernel   GET NEXT READY
+Kernel    - next ready is 2
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = -
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = C
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = l
+Kernel   VerifyInputString - char = d
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = p
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 3
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = R
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = T
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = R
+Kernel   VerifyInputString - char = N
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = N
+Kernel   VerifyInputString - char = G
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 2
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   ADD TO READY 2
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219848   2
+Kernel   TAIL: 0x219848   2
+Kernel   PID: 2
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219848   2
+Kernel   TAIL: 0x219848   2
+Kernel   PID: 2
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219c30   1
+Kernel   TAIL: 0x219c30   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 2
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 2
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelExit START - pid 2
+
+
+Kernel   KernelExit: parent is 1
+Kernel   ADD TO READY 1
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 1
+Kernel   
+
+
+KernelExit END SUCCESS stat code 0
+
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   destroyPCB called
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   destroyPCB - status queue was successfully destroyed
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   MySwitch: end | new pid : 1
+Kernel   
+
+
+KernelWait END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = a
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = g
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 2
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a048   3
+Kernel   TAIL: 0x21a048   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219860   3
+Kernel   TAIL: 0x219860   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 1
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelWait START - pid 1
+
+
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219860   3
+Kernel   TAIL: 0x219860   3
+Kernel   PID: 3
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   TrapClockHandler - DEQUE P: 0x219c48
+Kernel   ADD TO READY 3
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219860   3
+Kernel   TAIL: 0x219860   3
+Kernel   PID: 3
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 3
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 3
+Kernel   
+
+
+KernelDelay END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = -
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = C
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = l
+Kernel   VerifyInputString - char = d
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = p
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 3
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = R
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = F
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 3
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   ADD TO READY 3
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219860   3
+Kernel   TAIL: 0x219860   3
+Kernel   PID: 3
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219860   3
+Kernel   TAIL: 0x219860   3
+Kernel   PID: 3
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 3
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 3
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelExit START - pid 3
+
+
+Kernel   KernelExit: parent is 1
+Kernel   ADD TO READY 1
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 1
+Kernel   
+
+
+KernelExit END SUCCESS stat code 0
+
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   destroyPCB called
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   destroyPCB - status queue was successfully destroyed
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   MySwitch: end | new pid : 1
+Kernel   
+
+
+KernelWait END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = a
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = g
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = C
+Kernel   VerifyInputString - char = O
+Kernel   VerifyInputString - char = M
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = L
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = T
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 0
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 0
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219830   1
+Kernel   TAIL: 0x219830   1
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   ADD TO READY 0
+Kernel   GET NEXT READY
+Kernel    - next ready is 1
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelFork START - pid 1
+
+
+Kernel   createPcb called
+Kernel   returning half frame 1910
+Kernel   half frame pfn is 955   and offset is 0
+Kernel   createPcb END, pid is 4
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 509, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelFork brk is 122880
+Kernel   KernelFork Copy parent pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   KernelFork end copying 
+Kernel   PRE CTX SWITCH IN FORK 
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 509, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 1
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for PARENT
+Kernel   ADD TO READY 4
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelBrk START - pid 1
+
+
+Kernel   KernelBrk WANT addr is 0x21000
+Kernel   KernelBrk brk is 0x1e000
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelBrk: Allocating pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+
+KernelBrk END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 1
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 1
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = a
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = g
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 4
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 4
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for CHILD
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelBrk START - pid 4
+
+
+Kernel   KernelBrk WANT addr is 0x21000
+Kernel   KernelBrk brk is 0x1e000
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelBrk: Allocating pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+
+KernelBrk END SUCCESS
+
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 4
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 4
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = a
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = g
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 4
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 1
+Kernel   ADD TO READY 4
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelFork START - pid 1
+
+
+Kernel   createPcb called
+Kernel   returning half frame 2045
+Kernel   half frame pfn is 1022   and offset is 1
+Kernel   createPcb END, pid is 5
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelFork brk is 135168
+Kernel   KernelFork Copy parent pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   KernelFork end copying 
+Kernel   PRE CTX SWITCH IN FORK 
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 1
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for PARENT
+Kernel   ADD TO READY 5
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 1
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 1
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 4
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 4
+Kernel   TrapKernelHandler called
+Kernel   
+
+KernelFork START - pid 4
+
+
+Kernel   createPcb called
+Kernel   returning half frame 1911
+Kernel   half frame pfn is 955   and offset is 1
+Kernel   createPcb END, pid is 6
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3913728
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 1911
+Kernel   REFERENCE PT R0 END 
+Kernel   KernelFork brk is 135168
+Kernel   KernelFork Copy parent pages
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   KernelFork end copying 
+Kernel   PRE CTX SWITCH IN FORK 
+Kernel   MySwitch: start
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   REFERENCE PT R0 START loc 3913728
+Kernel   OFFSET EXIST
+Kernel   i is 509, and pfn is 1911
+Kernel   REFERENCE PT R0 END 
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   dereference pt r0, spoof, idx is 509
+Kernel   MySwitch: case 2
+Kernel   MySwitch: end | new pid : 4
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for PARENT
+Kernel   ADD TO READY 6
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 4
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 4
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 4
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 5
+Kernel   ADD TO READY 4
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 5
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for CHILD
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 5
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 5
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 5
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 1
+Kernel   ADD TO READY 5
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a478   6
+Kernel   TAIL: 0x219c60   5
+Kernel   PID: 6
+Kernel   PID: 4
+Kernel   PID: 0
+Kernel   PID: 5
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 1
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 6
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 6
+Kernel   POST CTX SWITCH IN FORK 
+Kernel   KernelFork END for CHILD
+Kernel   TrapKernelHandler called
+Kernel   KernelGetPid START - pid 6
+
+
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3913728
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 1911
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 6
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 6
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 4
+Kernel   ADD TO READY 6
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 4
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219848   0
+Kernel   TAIL: 0x21a078   6
+Kernel   PID: 0
+Kernel   PID: 5
+Kernel   PID: 1
+Kernel   PID: 6
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 4
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 4
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 5
+Kernel   ADD TO READY 4
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 5
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x212140   1
+Kernel   TAIL: 0x219c60   4
+Kernel   PID: 1
+Kernel   PID: 6
+Kernel   PID: 0
+Kernel   PID: 4
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 5
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 5
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 1
+Kernel   ADD TO READY 5
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a078   6
+Kernel   TAIL: 0x212140   5
+Kernel   PID: 6
+Kernel   PID: 0
+Kernel   PID: 4
+Kernel   PID: 5
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 1
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 6
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 6
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219848   0
+Kernel   TAIL: 0x21a078   1
+Kernel   PID: 0
+Kernel   PID: 4
+Kernel   PID: 5
+Kernel   PID: 1
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3913728
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 1911
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 6
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 6
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 4
+Kernel   ADD TO READY 6
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 4
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x212140   5
+Kernel   TAIL: 0x219c60   6
+Kernel   PID: 5
+Kernel   PID: 1
+Kernel   PID: 0
+Kernel   PID: 6
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 3911680
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 1910
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 4
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 4
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 5
+Kernel   ADD TO READY 4
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 5
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x21a078   1
+Kernel   TAIL: 0x212140   4
+Kernel   PID: 1
+Kernel   PID: 0
+Kernel   PID: 6
+Kernel   PID: 4
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4188160
+Kernel   OFFSET EXIST
+Kernel   i is 510, and pfn is 2045
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 5
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 5
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is 1
+Kernel   ADD TO READY 5
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 1
+Kernel   TrapClockHandler called
+Kernel   ------- START PRINT READY QUEUE --------------
+Kernel   Queue contents (PIDs):
+Kernel   HEAD: 0x219848   0
+Kernel   TAIL: 0x21a078   5
+Kernel   PID: 0
+Kernel   PID: 6
+Kernel   PID: 4
+Kernel   PID: 5
+Kernel   ------- END PRINT READY QUEUE --------------
+Kernel   ------- START PRINT BLOCKED QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT BLOCKED QUEUE --------------
+Kernel   ------- START PRINT WAIT QUEUE --------------
+Kernel   Queue is empty.
+Kernel   ------- END PRINT WAIT QUEUE --------------
+Kernel   DESTROYQUEUE START
+Kernel    : HEAD GOT ADDR (nil)
+Kernel    : ABOUT OT FREE QUEUE
+Kernel   DESTROYQUEUE END
+Kernel   TrapClockHandler - less than 2 clock ticks
+Kernel   TrapKernelHandler called
+Kernel   REFERENCE PT R0 START loc 4186112
+Kernel   NO OFFSET
+Kernel   i is 510, and pfn is 2044
+Kernel   REFERENCE PT R0 END 
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = n
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = r
+Kernel   VerifyInputString - char = o
+Kernel   VerifyInputString - char = c
+Kernel   VerifyInputString - char = e
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char = s
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = w
+Kernel   VerifyInputString - char = i
+Kernel   VerifyInputString - char = t
+Kernel   VerifyInputString - char = h
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = I
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = 1
+Kernel   VerifyInputString - char = .
+Kernel   VerifyInputString - char =  
+Kernel   VerifyInputString - char = P
+Kernel   VerifyInputString - char = A
+Kernel   VerifyInputString - char = U
+Kernel   VerifyInputString - char = S
+Kernel   VerifyInputString - char = E
+Kernel   VerifyInputString - char = D
+Kernel   VerifyInputString - char = 
+
+Kernel   VerifyInputString - char =  
+Kernel   dereference pt r0, spoof, idx is 510
+Kernel   
+
+KernelTTYWrite START - pid 1
+
+
+Kernel   TrapTTYTransmitHandler called
+Kernel    : no blocked in this term
+Kernel   GET NEXT READY
+Kernel    - next ready is idle
+Kernel   ADD TO READY 0
+Kernel    - next ready is 6
+Kernel   ADD TO READY 1
+Kernel   TrapTTYReceiveHandler: 0 chars received
+Kernel   MySwitch: start
+Kernel   MySwitch: case 3
+Kernel   MySwitch: end | new pid : 6

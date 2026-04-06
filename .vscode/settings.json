@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "new": "c",
+        "framemanager.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "contextswitch.h": "c",
+        "queue.h": "c",
+        "loadprogram.h": "c",
+        "stdint.h": "c",
+        "stdlib.h": "c",
+        "stddef.h": "c",
+        "kernel.h": "c",
+        "pcbmanager.h": "c",
+        "system_error": "c",
+        "terminals.h": "c"
+    }
+}

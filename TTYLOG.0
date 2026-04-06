@@ -1,0 +1,20 @@
+0>waiting 
+0>Init Process - Child proces PID 0. SDFSDF 
+0>Init Process - Child proces PID 3. RETURNING
+0>waiting 2 
+0>Init Process - Child proces PID 3. REF 
+0>waiting COMPLETE 
+0>Init Process with PID 1. Starting
+0>Init Process with PID 4. Starting
+0>Init Process with PID 1. PAUSED
+0>Init Process with PID 4. PAUSED
+0>Init Process with PID 5. PAUSED
+0>Init Process with PID 1. PAUSED
+0>Init Process with PID 6. PAUSED
+0>Init Process with PID 4. PAUSED
+0>Init Process with PID 5. PAUSED
+0>Init Process with PID 1. PAUSED
+0>Init Process with PID 6. PAUSED
+0>Init Process with PID 4. PAUSED
+0>Init Process with PID 5. PAUSED
+0>Init Process with PID 1. PAUSED
